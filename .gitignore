@@ -1,2 +1,4 @@
 floppy.img
 objdump.txt
+kernel
+lib/
