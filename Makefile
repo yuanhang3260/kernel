@@ -16,7 +16,7 @@ ASFLAGS=-felf
 
 all: kernel
 
-kernel: ${OBJS_C} ${OBJS_ASM}
+kernel: ${OBJS_C} ${OBJS_ASM} link.ld
 	ld $(LDFLAGS) -o kernel ${OBJS_C} ${OBJS_ASM}
 
 $(OBJ_DIR)/%.o: $(SRC_DIR)/%.c

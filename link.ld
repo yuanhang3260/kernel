@@ -5,10 +5,9 @@ SECTIONS
   {
     code = .; _code = .; __code = .;
     *(.text)
-    . = ALIGN(4096);
   }
 
-  .data :
+  .data ALIGN(4096):
   {
      data = .; _data = .; __data = .;
      *(.data)
