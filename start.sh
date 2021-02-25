@@ -1,4 +1,4 @@
 #!/bin/bash
 
-make
+make && objdump -dxs kernel > ./objdump.txt
 ./update_image.sh && ./run_kernel.sh

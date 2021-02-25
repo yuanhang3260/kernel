@@ -4,6 +4,7 @@ OBJ_DIR=lib
 OBJS_C = \
 	$(OBJ_DIR)/main.o \
 	$(OBJ_DIR)/common.o \
+	$(OBJ_DIR)/monitor.o \
 
 OBJS_ASM = \
 	$(OBJ_DIR)/boot.o \
