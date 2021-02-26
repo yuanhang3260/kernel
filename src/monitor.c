@@ -33,13 +33,13 @@ static void scroll() {
     // Move the current text chunk that makes up the screen
     // back in the buffer by a line
     int i;
-    for (i = 0*80; i < 24*80; i++) {
-        video_memory[i] = video_memory[i+80];
+    for (i = 0*80; i < 24 * 80; i++) {
+        video_memory[i] = video_memory[i + 80];
     }
 
     // The last line should now be blank. Do this by writing
     // 80 spaces to it.
-    for (i = 24*80; i < 25*80; i++) {
+    for (i = 24 * 80; i < 25 * 80; i++) {
         video_memory[i] = blank;
     }
     // The cursor should now be on the last line.
